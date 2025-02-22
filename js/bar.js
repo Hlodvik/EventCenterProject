@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+        });
+ 
     // Get all menu buttons and menu sections
     const buttons = document.querySelectorAll(".rb");
     const menus = document.querySelectorAll(".menus");

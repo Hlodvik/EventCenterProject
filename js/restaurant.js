@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     let contentGroups = {};
-
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+    });
     function updateView(groupId) {
         const contentDivs = document.querySelectorAll(`#${groupId} .content-div`);
 

@@ -16,7 +16,7 @@ button, .btn {
 }
 
 .reservation-btn {
-    background: #9e891f; /* Gold accent for reservation button */
+    background: #9e891f; 
 }
 .reservation-btn:hover {
     background: #857716;
@@ -49,7 +49,6 @@ button:hover, .btn:hover {
     background: #5a6268;
 }
 
-/* ticket button */
 .ticket-link {
     display: inline-block;
     margin-top: 10px;
@@ -63,7 +62,6 @@ button:hover, .btn:hover {
 
 .ticket-link:hover {
     background-color: #9e891f;
-    
 }
 
 .calendar-controls button {
@@ -74,15 +72,11 @@ button:hover, .btn:hover {
 .calendar-controls button:hover {
     background: #343a40;
 }
-
-.calendar-controls button:active {
-    transform: scale(0.98);
-}
  
 .arrow {
     position: absolute;
     bottom: 4vh;
-    width: 50px;
+    width: 10vw;
     height: auto;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -98,13 +92,13 @@ button:hover, .btn:hover {
 .menu-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 1.25rem;
 }
  
  
 .menu-arrow {
-    width: 40px;
+    width: 10vw;
     height: auto;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -114,7 +108,7 @@ button:hover, .btn:hover {
 
 
 .arrow {
-    font-size: 28px;
+    font-size: 1.5rem;
     flex-grow: 1;
     cursor: pointer;
     background-color: transparent;
@@ -137,7 +131,7 @@ button:hover, .btn:hover {
     color: black;
     background-color: #ffffff00;
     text-decoration: underline;
-    margin: 5px;
+    margin: 1rem;
     width:fit-content
 }
 .rb:hover{
@@ -155,5 +149,77 @@ button:hover, .btn:hover {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    button, .btn {
+        font-size: 1rem;  
+        width: 80%;  
+        padding: 1rem;
+        border-radius: 1.25rem;
+    }
+
+    .view-toggle {
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: .9rem;
+    }
+
+    .view-toggle button {
+        width: 100%;
+    }
+
+    .ticket-link {
+        width: 90%;
+        text-align: center;
+        display: flex;
+    }
+
+    .calendar-controls button {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .arrow {
+        width: 8vw;
+        bottom: 2vh;
+    }
+
+    .menu-arrow {
+        width: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        font-weight: 400;
+    }
+    button, .btn {
+        font-size: 1.25rem;
+        width: 100%; 
+        padding: 1rem;
+    }
+
+    .view-toggle {
+        gap: .5rem;
+    }
+
+    .ticket-link {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        width: 4vw;  
+    }
+
+    .menu-arrow {
+        width: 4vw;
+    }
+
+    .rb {
+        font-size:1rem;
+        width: 100%;
+        text-align: center;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="../assets/icons/runes.ico">
@@ -10,6 +11,11 @@
 
 <body class="bbg">
     <nav class="navbar">
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
@@ -25,40 +31,43 @@
         <div class="container">
             <div class="content">
                 <div class="form-container">
-                    <h1 class="hcl">Event Inquiry Form</h1> <!-- I took a peak at how other websites do these types of forms and google forms was a fairly common practice so I went ahead with figuring out how to make this work.-->
-                    <form id="eventForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfM9KpMo45HV6axZW5HA4zgFyKnLMlkboNlVfRYLN7QrOMfuw/formResponse" method="POST">
- 
-                        <label for="email">Email *</label> 
-                        <input type="email" id="email" name="emailAddress" required> 
+                    <h1 class="hcl">Event Inquiry Form</h1>
+                    <!-- I took a peak at how other websites do these types of forms and google forms was a fairly common practice so I went ahead with figuring out how to make this work.-->
+                    <form id="eventForm"
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfM9KpMo45HV6axZW5HA4zgFyKnLMlkboNlVfRYLN7QrOMfuw/formResponse"
+                        method="POST">
 
-         
-                        <label for="clientName">Client Name and Organization Name (if applicable) *</label> 
-                        <input type="text" id="clientName" name="entry.1216942755" required> 
- 
-                        <label for="organizationType">Type of Organization *</label> 
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="emailAddress" required>
+
+
+                        <label for="clientName">Client Name and Organization Name (if applicable) *</label>
+                        <input type="text" id="clientName" name="entry.1216942755" required>
+
+                        <label for="organizationType">Type of Organization *</label>
                         <select id="organizationType" name="entry.749887382" required>
                             <option value="Individual">Individual</option>
                             <option value="Business/Corporation/LLC">Business/Corporation/LLC</option>
                             <option value="Non-profit">Non-profit</option>
                             <option value="Association/Community Group">Association/Community Group</option>
                             <option value="Other">Other</option>
-                        </select> 
- 
-                        <label for="eventType">What type of event are you holding? *</label> 
-                        <input type="text" id="eventType" name="entry.2142283029" required> 
- 
+                        </select>
+
+                        <label for="eventType">What type of event are you holding? *</label>
+                        <input type="text" id="eventType" name="entry.2142283029" required>
+
                         <label>Is this a one-night event? *</label>
                         <div class="radio-group">
                             <input type="radio" id="oneNightYes" name="entry.1431346224" value="Yes" required>
-                            <label for="oneNightYes">Yes</label> 
+                            <label for="oneNightYes">Yes</label>
 
                             <input type="radio" id="oneNightNo" name="entry.1431346224" value="No">
-                            <label for="oneNightNo">No</label> 
+                            <label for="oneNightNo">No</label>
 
                             <input type="radio" id="oneNightMaybe" name="entry.1431346224" value="Maybe">
-                            <label for="oneNightMaybe">Maybe</label> 
+                            <label for="oneNightMaybe">Maybe</label>
                         </div>
- 
+
                         <label>What space(s) in the venue are you interested in hosting your event? *</label>
                         <div class="checkbox-group">
                             <input type="checkbox" id="mainHall" name="entry.1378844878" value="Main Hall">
@@ -71,14 +80,15 @@
                             <label for="secondFloor">Suttung's Cellar</label><br>
 
                             <input type="checkbox" id="secondFloor" name="entry.1378844878" value="Second Floor">
-                            <label for="thirdFloor">Second Floor (Over night accomodations for up to 20 guests)</label><br>
+                            <label for="thirdFloor">Second Floor (Over night accomodations for up to 20
+                                guests)</label><br>
                         </div>
 
-       
+
                         <label for="eventDates">Please provide a minimum of three potential dates for your event
                             *</label>
                         <textarea id="eventDates" name="entry.554829397" rows="3" required></textarea>
- 
+
                         <label>Will you be selling tickets for your event? *</label>
                         <div class="radio-group">
                             <input type="radio" id="ticketsYes" name="entry.1341762699" value="Yes" required>
@@ -90,10 +100,10 @@
                             <input type="radio" id="ticketsMaybe" name="entry.1341762699" value="Maybe">
                             <label for="ticketsMaybe">Maybe</label>
                         </div>
- 
+
                         <label for="guests">Number of potential guests *</label>
                         <input type="number" id="guests" name="entry.1400451223" required>
- 
+
                         <label for="seating">What kind of seating arrangements is desired? *</label>
                         <select id="seating" name="entry.917665101" required>
                             <option value="Formal">Formal: Sit down event with tables and chairs</option>
@@ -101,7 +111,7 @@
                             <option value="Performance">Performance: Audience risers, cabaret seating, rows of chairs
                             </option>
                         </select>
- 
+
                         <label>Is this event hosting live music or hiring a DJ? *</label>
                         <div class="radio-group">
                             <input type="radio" id="musicYes" name="entry.1896098591" value="Yes" required>
@@ -113,7 +123,7 @@
                             <input type="radio" id="musicMaybe" name="entry.1896098591" value="Maybe">
                             <label for="musicMaybe">Maybe</label>
                         </div>
- 
+
                         <label>Will this event require food service? *</label>
                         <div class="radio-group">
                             <input type="radio" id="foodYes" name="entry.1341439755" value="Yes" required>
@@ -125,7 +135,7 @@
                             <input type="radio" id="foodMaybe" name="entry.1341439755" value="Maybe">
                             <label for="foodMaybe">Maybe</label>
                         </div>
- 
+
                         <label>Does your event require a bar service? *</label>
                         <div class="radio-group">
                             <input type="radio" id="barYes" name="entry.2120402661" value="Yes" required>
@@ -137,10 +147,10 @@
                             <input type="radio" id="barMaybe" name="entry.2120402661" value="Maybe">
                             <label for="barMaybe">Maybe</label>
                         </div>
- 
+
                         <label for="additionalInfo">Please tell us more about your project or event</label>
                         <textarea id="additionalInfo" name="entry.1028201277" rows="4"></textarea>
- 
+
                         <button type="submit">Submit Inquiry</button>
 
                     </form>
@@ -148,6 +158,17 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("open");
+            });
+        });
+    </script>
 </body>
 
 </html>

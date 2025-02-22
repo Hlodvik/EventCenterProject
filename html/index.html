@@ -11,6 +11,11 @@
 
 <body class="ibg">
     <nav class="navbar">
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
@@ -25,7 +30,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="content">
-                <h1 style="text-align: center; font-size: 90px;font-family: monoton; font-weight: 200;">
+                <h1 style="text-align: center; font-size: 15vh;font-family: monoton; font-weight: 200;">
                     Gymir's Hall
                 </h1><br><!--Felt like each page looked better with a different font height so I decided to just do inline style for each-->
                 <div id="display">
@@ -102,11 +107,17 @@
     </div>
 
 <script>
+
+
     document.addEventListener("DOMContentLoaded", function () {
     const contents = document.querySelectorAll(".content-div");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
     let currentIndex = 0;
+
+
 
     function updateActiveContent() {
         contents.forEach((content, index) => {
@@ -123,7 +134,11 @@
         currentIndex = (currentIndex - 1 + contents.length) % contents.length;
         updateActiveContent();
     });
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("open");
 
+    }); 
     updateActiveContent();  
 });
 

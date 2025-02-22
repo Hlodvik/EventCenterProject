@@ -93,7 +93,7 @@
 }
 .content-div {
     display: none; /* Hide all divs initially */
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -130,11 +130,11 @@
 }
 .arrow-container {
     display: flex;
-    justify-content: center;  /* Center the arrows horizontally */
-    align-items: center;  /* Center vertically */
+    justify-content: center;  
+    align-items: center;   
     width: 100%;
-    gap: 50px; /* Space between arrows */
-    margin-top: 10px;
+    gap: 20vw;  
+    margin-top: 5vh;
     position: relative;
 }
 
@@ -170,7 +170,7 @@
 }
 
 .menu-arrow {
-    width: 40px;
+    width: 20vw;
     height: auto;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -183,11 +183,97 @@
 .hidden {
     display: none;
 }
-
-.hidden.active {
-    display: block;
+.active {
+    display: block;  
 }
 
-.active {
-    display: block; /* Show the active div */
+@media (max-width: 768px) {
+    .wrapper {
+        padding-top: 1vh;
+    }
+
+    .container {
+        width: 95vw;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .menu-section {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .tasting-menus,
+    .menus,
+    .content-div {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .rco,
+    .rcocon {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .arrow-container {
+        gap: 5vw;
+      
+        margin-top: 2vh;
+    }
+
+    .menu-arrow {
+        width: 12vw;
+    }
+
+    .backdrop {
+        filter: blur(5px);
+    }
+}
+ 
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        padding: 5px;
+    }
+
+    .content {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .menu-section {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .tasting-menus,
+    .menus,
+    .content-div {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .rco,
+    .rcocon {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .arrow-container {
+        gap: 1vw;
+        
+        margin-top: 1vh;
+    }
+
+    .menu-arrow {
+        width: 10vw;
+    }
 }

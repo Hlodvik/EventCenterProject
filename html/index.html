@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/runes.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="ibg">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="restaurant.html">restaurant</a></li>
+            <li><a href="bar.html">bar</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 90px;font-family: monoton; font-weight: 200;">
+                    Gymir's Hall
+                </h1><br><!--Felt like each page looked better with a different font height so I decided to just do inline style for each-->
+                <div id="display">
+                    <div class="arrow-container">
+                        <button id="prevBtn" class="arrow">←</button>
+                        <button id="nextBtn" class="arrow">→</button>
+                    </div>
+
+
+                    <div id="content1" class="content-div active">
+                        <div id="sections-text">
+                            <h3 style="text-decoration: underline;">Our Venue Welcomes:</h3><br>
+                            <p>COMMUNITY <br>
+                                WEDDINGS & CELEBRATIONS<br>
+                                THEATRE PERFORMANCES<br>
+                                NON-PROFIT <br>
+                                LIVE MUSIC<br>
+                                MEETINGS<br>
+                                ART EXHIBITS<br>
+                                PRIVATE EVENTS<br>
+                                & MORE</p>
+                        </div>
+                    </div>
+
+                    <div id="content2" class="content-div">
+                        <div class="sections-text">
+                            <p>Check out our Bar:</p>
+                            <h1>Suttung's Cellar</h1>
+                            <p>Open to the public daily, offering a welcoming space to enjoy drinks and socialize.
+                                Access
+                                may be limited on days when the
+                                venue is booked for private events. Check our event calendar or call ahead to confirm
+                                availability! </p>
+                            <p><a href='bar.html'>Drink Menu</a><br><a href='book.html'>Book The Bar!</a></p>
+                        </div>
+                    </div>
+
+                    <div id="content3" class="content-div">
+                        <div class="sections-text">
+                            <p>Explore our Restaurant:</p>
+                            <h1>Hymir's Table</h1>
+                            <p>Experience our award winning rotating menu crafted by our expert chefs, reservations
+                                required.<br>
+                                <a href='restaurant.html'>Menus and Reservations</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="content4" class="content-div">
+                        <div class="sections-text">
+                            <h1>Join Us</h1>
+                            <p> Love visiting Gymir's Hall? Consider becoming a member! From discounts, to acces to
+                                members-only events, access to amenities outside of business hours,
+                                and much more, becoming a member offers many benefits in exchange for a yearly
+                                subscription
+                                fee. Want to get even closer with us? Perhaps joining
+                                the staff would be a better choice for you. You get all the benefits of membership, as
+                                well
+                                as competitive benefits and pay.<br>
+                                For more information:<br>
+                                <a href='#'>Membership</a><br>
+                                <a href='#'>Employment</a>
+                            </p>
+                        </div>
+                    </div>
+
+ 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content-div");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    let currentIndex = 0;
+
+    function updateActiveContent() {
+        contents.forEach((content, index) => {
+            content.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % contents.length;
+        updateActiveContent();
+    });
+
+    prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+        updateActiveContent();
+    });
+
+    updateActiveContent();  
+});
+
+</script>
+</body>
+
+</html>

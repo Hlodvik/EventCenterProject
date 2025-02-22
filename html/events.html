@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/runes.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/events.js" defer></script>
+</head>
+
+<body class="ebg">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="restaurant.html">restaurant</a></li>
+            <li><a href="bar.html">bar</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 90px; font-family: monoton; font-weight: 200;">
+                    EVENTS
+                </h1><br>
+                
+                <!-- View Toggle Buttons -->
+                <div class="view-toggle">
+                    <button id="listViewBtn">List View</button>
+                    <button id="calendarViewBtn">Calendar View</button>
+                </div>
+
+                <!-- list view, gets populated with javascript, shows by default on events page -->
+                <div id="eventsList" class="events-list"></div>
+
+                <!-- Calendar view, populated with javascript, hidden by default -->
+                <section id="calendarView" class="calendar-container hidden">
+                    <h1>Event Calendar</h1>
+                    <div class="arrow-container">
+                        <button class="arrow" id="prevMonth">←</button>
+                        <section id="currentMonth"></section>
+                        <button class="arrow" id="nextMonth">→</button>
+                    </div>
+                    <section id="calendar"></section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

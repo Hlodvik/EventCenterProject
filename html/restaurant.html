@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/runes.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hymir's Table</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/restaurant.js" defer></script>
+
+</head>
+
+<body class="rbg">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="restaurant.html">restaurant</a></li>
+            <li><a href="bar.html">bar</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 70px;font-family: monoton; font-weight: 200;">Hymir's Table
+                </h1><br>
+                <div class=" "><!-- rb=> restaurant button-->
+                    <button class="rb" id="viewHours">Hours</button>
+                    <button class="rb" id="viewTasting">Tasting Menus</button>
+                    <button class="rb" id="viewAlaCarte">A La Carte Menu</button>
+                    <button class="rb" id="viewReservation">Reservations</button>
+                </div>
+
+                <div id="display"></div>
+                <div id="hours-menu" class="rcocon active">
+                    <h2>Hours of Operation</h2>
+                    <p><b>Monday:</b> Closed</p>
+                    <p><b>Tuesday - Thursday:</b> 5:00 PM - 10:00 PM</p>
+                    <p><b>Friday - Saturday:</b> 5:00 PM - 11:00 PM</p>
+                    <p><b>Sunday:</b> 4:00 PM - 9:00 PM</p>
+
+                    <p>
+                        Experience an unforgettable evening at Hymir's Table, where innovation meets tradition.
+                        Our rotating tasting menus highlight the season's finest ingredients, crafted with precision
+                        and creativity. <br>Prices begin at 195$ per person.<br>
+                        For a more flexible dining experience, our à la carte menu offers a selection of carefully
+                        curated dishes.
+                    </p>
+                </div>
+
+                <div id="tasting-menu" class="rcocon">
+                    <div id="tasting-menu-container">
+                        <div class="arrow-container">
+                            <button id="menuPrevBtn" class="arrow">←</button>
+                            <button id="menuNextBtn" class="arrow">→</button>
+                        </div>
+                        <div id="menu1" class="content-div active">
+                            <div class="menu-text">
+                                <h3 style="text-decoration: underline;">The Alchemist's Feast</h3> <!--Went and looked at sample tasting menus from famous restaurants, inserted nordic ingredients here and there to fit the theme-->
+                                <p>
+                                    . . . . . FIRST . . . . .<br>
+                                    Solstice | Chilled Corn Consommé, Saffron, Pickled Shallot<br><br>
+
+                                    . . . . . SECOND . . . . .<br>
+                                    Fawn | Smoked Venison Tartare, Juniper, Birch Syrup<br><br>
+
+                                    . . . . . THIRD . . . . .<br>
+                                    Eclipse | Charred Eggplant Purée, Black Garlic, Compressed Fig<br><br>
+
+                                    . . . . . FOURTH . . . . .<br>
+                                    Brine | Oysters & Pearls, Champagne Foam, Yuzu Kosho<br><br>
+
+                                    . . . . . FIFTH . . . . .<br>
+                                    Ember | Roasted Maitake, Burnt Honey, Walnut Gremolata<br><br>
+
+                                    . . . . . SIXTH . . . . .<br>
+                                    Aurora | Arctic Char, Beurre Blanc, Fennel Pollen<br><br>
+
+                                    . . . . . SEVENTH . . . . .<br>
+                                    Hearth | Duck Confit, Parsnip, Blackberry Gastrique<br><br>
+
+                                    . . . . . EIGHTH . . . . .<br>
+                                    Obsidian | Charcoal-Grilled Wagyu, Smoked Bone Marrow, Fermented Black
+                                    Truffle<br><br>
+
+                                    . . . . . NINTH . . . . .<br>
+                                    Zephyr | Candied Lemon, White Peaches, Basil Granita<br><br>
+
+                                    . . . . . TENTH . . . . .<br>
+                                    Reverie | Dark Chocolate Mousse, Salted Caramel, Toasted Hazelnut<br><br>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div id="menu2" class="content-div">
+                            <div class="menu-text">
+                                <h3 style="text-decoration: underline;">The Prismatic Table</h3>
+                                <p>
+                                    . . . . . FIRST . . . . .<br>
+                                    Ember | Antelope Broth, Ginger & Thyme<br><br>
+
+                                    . . . . . SECOND . . . . .<br>
+                                    Forager | Maitake, Celery Root & Cress<br><br>
+
+                                    . . . . . THIRD . . . . .<br>
+                                    Golden Egg | Cauliflower, Egg & Trout Roe<br><br>
+
+                                    . . . . . FOURTH . . . . .<br>
+                                    Verdant | Braised Greens, Leek & White Truffle<br><br>
+
+                                    . . . . . FIFTH . . . . .<br>
+                                    Hunter | Antelope Leg Tartare, Consommé & Caviar<br><br>
+
+                                    . . . . . SIXTH . . . . .<br>
+                                    Current | Turbot, Tarragon & Daikon<br><br>
+
+                                    . . . . . SEVENTH . . . . .<br>
+                                    Harvest | Duck, Koginut Squash & Pumpkin Seed<br><br>
+
+                                    . . . . . EIGHTH . . . . .<br>
+                                    Obsidian | Antelope Loin, Chanterelle Mushroom & Black Truffle<br><br>
+
+                                    . . . . . NINTH . . . . .<br>
+                                    Citrus Bloom | Bergamot, Crosne & Dill<br><br>
+
+                                    . . . . . TENTH . . . . .<br>
+                                    Marrow | Antelope Bone, Candy Cap Mushroom & Maple<br><br>
+
+                                    . . . . . ELEVENTH . . . . .<br>
+                                    Sunburst | Flavors of Citrus<br><br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="menu3" class="content-div">
+                            <div class="menu-text">
+                                <h3 style="text-decoration: underline;">Elysium Tasting</h3>
+                                <p>
+                                    . . . . . FIRST . . . . .<br>
+                                    Nacre | Osetra, Mussel, Lychee<br><br>
+
+                                    . . . . . SECOND . . . . .<br>
+                                    Hot Potato | Potato, Black Truffle, Parmesan<br><br>
+
+                                    . . . . . THIRD . . . . .<br>
+                                    Plume | Crisps, Ashed Onion Dip, Mint<br><br>
+
+                                    . . . . . FOURTH . . . . .<br>
+                                    Heads & Tails | Bun, Coriander, Chili / White Peppercorn, White Sesame, White
+                                    Miso<br><br>
+
+                                    . . . . . FIFTH . . . . .<br>
+                                    Squeaker | Potpourri, Blueberry, Foie Gras, Aigre-Doux<br><br>
+
+                                    . . . . . SIXTH . . . . .<br>
+                                    Branches | Apricot, Fennel, Taralli, Garden Gimlet<br><br>
+
+                                    . . . . . SEVENTH . . . . .<br>
+                                    Clipped | Gooseberry, Uni, Morel, Sweet Corn<br><br>
+
+                                    . . . . . EIGHTH . . . . .<br>
+                                    Explosion | Black Truffle, Romaine, Parmesan<br><br>
+
+                                    . . . . . NINTH . . . . .<br>
+                                    Jacob's Ladder | Pomegranate, White Asparagus, Jameed<br><br>
+
+                                    . . . . . TENTH . . . . .<br>
+                                    Bubblegum | Thai Long Peppercorn, Hibiscus, Crème Fraîche<br><br>
+
+                                    . . . . . ELEVENTH . . . . .<br>
+                                    Paint | Flavors of a Banana Split<br><br>
+
+                                    . . . . . TWELFTH . . . . .<br>
+                                    Balloon | Helium, Green Apple, Taffy<br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ala-carte-menu" class="rcocon">
+                    <div class="menu-text">
+                        <h2>Appetizers</h2><br>
+                        <p>Lava Baked Black Bread and Herbed Butter | 8</p>
+                        <p>Smoked Salmon Tartare | 12</p>
+                        <p>Reindeer Carpaccio | 10</p>
+                        <p>Smorgasbord | 18</p><br>
+                    </div>
+
+                    <div class="menu-text">
+                        <h2>Salads</h2><br>
+                        <p>House Salad | 15</p>
+                        <p>Nordic Kale & Walnut Salad | 14</p>
+                        <p>Pork Schnitzel with Warm Potato Salad | 18</p><br>
+                    </div>
+
+                    <div class="menu-text">
+                        <h2>Soups</h2><br>
+                        <p>Crawfish Bisque | 24</p>
+                        <p>Reindeer Stew with Root Vegetables | 24</p>
+                        <p>Beef Bourguignon | 27</p><br>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Poultry</h2><br>
+                        <p> Seared Duck Breast with Lingonberry Reduction | 34 </p>
+                        <p> Scandinavian Roast Chicken with Dill Sauce | 35 </p>
+                        <p> Chicken with Saffron and Cinnamon | 28 </p><br>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Fish</h2><br>
+                        <p>Herb-Crusted Salmon | 34</p>
+                        <p>Butter-Basted Halibut | 30</p>
+                        <p>Blackened Cod with Nordic Slaw | 34</p><br>
+                    </div>
+
+                    <div class="menu-text">
+                        <h2>Specials</h2><br>
+                        <p>Dry-Aged Ribeye | 45</p>
+                        <p>Wagyu New York Strip | 60</p>
+                        <p>Elk Filet Mignon | 55</p>
+                        <p>Venison Wellington | 42</p>
+                        <p>Truffle Mac & Cheese with Smoked Bacon | 24</p><br>
+                    </div>
+
+                    <div class="menu-text">
+                        <h2>Desserts</h2><br>
+                        <p>Cloudberry Cheesecake | 12</p>
+                        <p>Dark Chocolate Mousse with Sea Salt | 14</p>
+                        <p>Sticky Toffee Pudding | 11</p><br>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div id="reservation-menu" class="rcocon">
+                <h2>Make a Reservation</h2>
+                <form id="reservationForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <select id="time" name="time" required><!--I honestly couldn't find a better way to do this, with out specifying it allowed for reservations which included seconds, didn't like the way that looked even if this isn't really for an assignment.-->
+                        <option value="17:00">5:00 PM</option><!--I also thought about linking this to a google form as i did for the event inquiry but I've spent a long time on this already-->
+                        <option value="17:30">5:30 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                        <option value="21:30">9:30 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                        <option value="22:30">10:30 PM</option>
+                        <option value="23:00">11:00 PM</option>
+                    </select>
+
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+
+                    <label for="message">Special Requests:</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>

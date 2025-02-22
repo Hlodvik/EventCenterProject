@@ -1,0 +1,21 @@
+/* background */
+.abg, .bbg, .cbg, .ebg, .ibg, .rbg, .sbg {
+    position:absolute; /* Ensures backgrounds remain static */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Maintains parallax effect */
+    z-index: -1;
+}
+
+/* Assign images */
+.abg {background-image: url('../assets/images/byn.jpg');}
+.bbg {background-image: url('../assets/images/gallery.jpg');}
+.cbg { background-image: url('../assets/images/blackpearlblur.jpg'); }
+.ebg { background-image: url('../assets/images/stage.jpg'); }
+.ibg { background-image: url('../assets/images/barimg.jpg'); }
+.rbg { background-image: url('../assets/images/restaurant.jpg');}
+.sbg {background-image: url('../assets/images/icebar.jpg');}

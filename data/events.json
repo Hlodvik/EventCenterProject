@@ -1,0 +1,103 @@
+[
+    {
+        "sdate": "2025-02-28",
+        "edate": "2025-02-28",
+        "title": "Sungazer",
+        "details": {
+            "special-guests": [
+                "Shubh Saran",
+                "Salami Rose Joe Louis"
+            ]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/sungazer_poster.jpg",
+        "calendarImage": "../assets/images/sungazer_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-01",
+        "edate": "2025-04-01",
+        "title": "Saturday Night Standup",
+        "details": {
+            "hosts": [
+                "Josh Wolf",
+                "Mekki Leeper"
+            ]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/saturdaynight_poster.jpg",
+        "calendarImage": "../assets/images/saturdaynight_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-04",
+        "edate": "2025-03-04",
+        "title": "DECAPITATED",
+        "details": {
+            "special-guests": [
+                "Darkest Hour",
+                "Exmortus",
+                "Incantation"
+            ]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/decap_poster.jpg",
+        "calendarImage": "../assets/images/decap_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-07",
+        "edate": "2025-03-07",
+        "title": "Bebop Bounty Big Band Presents: Cowboy Bebop!",
+        "details": {
+            "Starring":["World Famous Bebop Bounty Big Band"]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/cowboybbop_event_poster.jpg",
+        "calendarImage": "../assets/images/cowboybbop_event_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-14",
+        "edate": "2025-03-15",
+        "title": "Horror Film Festival",
+        "details": {
+            "guest-speakers": [
+                "Ari Aster",
+                "Rob Jabbaz",
+                "Jordan Peele"
+            ],
+            "featured-films": [
+                "Hereditary",
+                "The Sadness",
+                "Get Out"
+            ]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/horror_poster.jpg",
+        "calendarImage": "../assets/images/horror_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-21",
+        "edate": "2025-03-21",
+        "title": "Brooklyn Raga Massive",
+        "details": {
+            "performing": [
+                "John Coltrane - A Love Supreme",
+                "Thelonious Monk - Round Midnight"
+            ]
+        },
+        "type": "public",
+        "backdrop": "../assets/images/BRM_poster.jpg",
+        "calendarImage": "../assets/images/BRM_poster.jpg"
+    },
+    {
+        "sdate": "2025-03-29",
+        "edate": "2025-03-29",
+        "title": "Private Wedding Event",
+        "details": {
+            "hosts": [
+                "Alice & Jason Hammond"
+            ]
+        },
+        "type": "private",
+        "backdrop": "../assets/images/private_event.jpg",
+        "calendarImage": "../assets/images/private_thumbnail.jpg"
+    }
+]

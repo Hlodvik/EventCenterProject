@@ -1,0 +1,45 @@
+/* All of these are used in the events.js*/
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 5px;
+    max-width: 100%;
+    width: 55vw;
+    margin: auto;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 120px;
+    height: 100%;
+}
+
+.calendar-day .day-number {
+    font-weight: bold;
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#currentMonth {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/runes.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suttung's Cellar</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/bar.js" defer></script>
+
+</head>
+
+<body class="sbg">
+    <!-- nav -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="bar.html">Bar</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Wrapper & Main Content -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <h1 style="text-align: center; font-size: 70px;font-family: monoton; font-weight: 200;">Suttung's Cellar
+                </h1><br>
+                <p>Tucked away beneath Gymir's Hall, Suttung's Cellar is a sanctuary for the adventurous
+                    drinker, blending ancient
+                    inspiration with modern craft. Named after the legendary giant Suttung, who guarded the Mead of
+                    Poetry, this cellar holds
+                    a selection worthy of the gods—from rare meads and Nordic ales to expertly crafted cocktails and
+                    aged spirits.
+                    Step into a world where old-world mysticism meets contemporary indulgence. Whether you're savoring a
+                    handcrafted classic,
+                    exploring a signature creation, or raising a horn of mead in celebration, every drink tells a story.
+                </p>
+                <!-- Menu Selection Buttons -->
+                <div>
+                    <button class="rb" data-menu="classic">Classics</button>
+                    <button class="rb" data-menu="signature">Signatures</button>
+                    <button class="rb" data-menu="wine">Wine</button>
+                    <button class="rb" data-menu="beer">Ale & Mead</button>
+                </div>
+
+                <!-- classic cocktails -->
+                <div class="menus" data-menu="classic">
+                    <div class="dropdown">
+                        <div class="dropdown-title">Absinthe</div>
+                        <div class="dropdown-content">
+                            <h3>Death in the Afternoon</h3>
+                            <p>absithe | champagne </p>
+                            <h3>Sazerac</h3>
+                            <p>absinthe | cognac | Sugar | Peychaud's</p>
+                            <h3>Chrysanthemum</h3>
+                            <p>absinthe | bénédictine | vermouth</p>
+                            <h3>Corpse Reviver No. 2</h3>
+                            <p>absinthe | gin | lemon | Cointreau | Lillet Blanc</p>
+                            <h3>Monkey Gland</h3>
+                            <p>gin | orange | absinthe | grenadine</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Brandy</div>
+                        <div class="dropdown-content">
+                            <h3>Brandy Alexander</h3>
+                            <p>brandy | dark crème de cacao | cream</p>
+                            <h3>Sidecar</h3>
+                            <p>brandy | Cointreau | lemon</p>
+                            <h3>Vieux Carré</h3>
+                            <p>brandy | rye whiskey | vermouth | Bénédictine | bitters</p>
+                            <h3>Metropolitan</h3>
+                            <p>brandy | sweet vermouth | simple syrup | bitters</p>
+                            <h3>Stinger</h3>
+                            <p>brandy | white crème de menthe</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Gin</div>
+                        <div class="dropdown-content">
+                            <h3>Martini</h3>
+                            <p>gin | dry vermouth | olive</p>
+                            <h3>Tom Collins</h3>
+                            <p>gin | lemon | simple syrup | soda water</p>
+                            <h3>Gimlet</h3>
+                            <p>gin | lime | simple syrup</p>
+                            <h3>Negroni</h3>
+                            <p>gin | Campari | sweet vermouth</p>
+                            <h3>Aviation</h3>
+                            <p>gin | maraschino liqueur | crème de violette | lemon </p>
+                            <h3>French 75</h3>
+                            <p>gin | lemon | simple syrup | champagne</p>
+                            <h3>Singapore Sling</h3>
+                            <p>gin | cherry liqueur | Bénédictine | lime | soda</p>
+                            <h3>Last Word</h3>
+                            <p>gin | lime | green Chartreuse | maraschino liqueur</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Rum</div>
+                        <div class="dropdown-content">
+                            <h3>Daiquiri</h3>
+                            <p>rum | lime | simple syrup</p>
+                            <h3>Piña Colada</h3>
+                            <p>rum | pineapple | coconut cream</p>
+                            <h3>Mojito</h3>
+                            <p>rum | lime | mint | simple syrup | soda water</p>
+                            <h3>Dark 'n' Stormy</h3>
+                            <p>dark rum | ginger beer | lime</p>
+                            <h3>Hurricane</h3>
+                            <p>light & dark rum | passion fruit | lime | grenadine</p>
+                            <h3>Mai Tai</h3>
+                            <p>rum | orange liqueur | lime | orgeat syrup</p>
+                            <h3>Zombie</h3>
+                            <p>rum | lime | passion fruit syrup | absinthe</p>
+                            <h3>Planter's Punch</h3>
+                            <p>dark rum | lime | grenadine | bitters</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Sake</div>
+                        <div class="dropdown-content">
+                            <h3>Saketini</h3>
+                            <p>sake | vodka | dry vermouth</p>
+                            <h3>Cherry Blossom</h3>
+                            <p>sake | grenadine | lemon</p>
+                            <h3>Sake Mojito</h3>
+                            <p>sake | mint | lime | simple syrup | soda</p>
+                            <h3>Rising Sun</h3>
+                            <p>sake | orange juice | grenadine</p>
+                            <h3>Tokyo Mule</h3>
+                            <p>sake | ginger beer | lime</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Tequila</div>
+                        <div class="dropdown-content">
+                            <h3>Margarita</h3>
+                            <p>tequila | lime | triple sec</p>
+                            <h3>Tequila Sunrise</h3>
+                            <p>tequila | orange juice | grenadine</p>
+                            <h3>Paloma</h3>
+                            <p>tequila | grapefruit soda | lime</p>
+                            <h3>El Diablo</h3>
+                            <p>tequila | lime | crème de cassis | ginger beer</p>
+                            <h3>Mexican Mule</h3>
+                            <p>tequila | lime | ginger beer</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Vodka</div>
+                        <div class="dropdown-content">
+                            <h3>Moscow Mule</h3>
+                            <p>vodka | ginger beer | lime</p>
+                            <h3>Bloody Mary</h3>
+                            <p>vodka | tomato juice | lemon | Worcestershire | hot sauce</p>
+                            <h3>White Russian</h3>
+                            <p>vodka | coffee liqueur | cream</p>
+                            <h3>Screwdriver</h3>
+                            <p>vodka | orange juice</p>
+                            <h3>Espresso Martini</h3>
+                            <p>vodka | espresso | coffee liqueur | simple syrup</p>
+                            <h3>Cosmopolitan</h3>
+                            <p>vodka | triple sec | cranberry | lime</p>
+                            <h3>Black Russian</h3>
+                            <p>vodka | coffee liqueur</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-title">Whiskey</div>
+                        <div class="dropdown-content">
+                            <h3>Old Fashioned</h3>
+                            <p>whiskey | sugar | bitters | orange peel</p>
+                            <h3>Manhattan</h3>
+                            <p>whiskey | sweet vermouth | bitters</p>
+                            <h3>Whiskey Sour</h3>
+                            <p>whiskey | lemon juice | simple syrup</p>
+                            <h3>Mint Julep</h3>
+                            <p>whiskey | mint | simple syrup | crushed ice</p>
+                            <h3>Boulevardier</h3>
+                            <p>whiskey | Campari | sweet vermouth</p>
+                            <h3>Rob Roy</h3>
+                            <p>Scotch | sweet vermouth | bitters</p>
+                            <h3>Irish Coffee</h3>
+                            <p>Irish whiskey | coffee | sugar | whipped cream</p>
+                        </div>
+                    </div>
+                </div>
+                    <!--signature cocktails -->
+                <div class="menus" data-menu="signature">
+                    <div class="bt">
+                        <h3>Völva's Insight</h3>
+                        <p>Woody Creek Rye | blackberries | sage | lemon | sugar</p>
+
+                        <h3>Breeze from Helheim</h3>
+                        <p>Nonino Grappa | Dolin Blanc | chrysanthemum | Chartreuse vegetal | spearmint</p>
+
+                        <h3>Hvergelmir's Embibement</h3>
+                        <p>Laird's Applejack | Stranahan's W&G Barrel Whisky | lemon | black pepper | bay leaf | thyme |
+                            Angostura</p>
+
+                        <h3>Iðunn's Gift</h3>
+                        <p>Singani 63 | pickled apple | lemon</p>
+
+                        <h3>Þjálfi's Sprint</h3>
+                        <p>Ransom Old Tom | Dolin Blanc | cacao butter | Licor 43 | cherry bark bitters | Chocolate
+                            Thunder terpenes</p>
+
+                        <h3>Lífþrasir's Boon</h3>
+                        <p>clarified milk punch | Woody Creek Rye | Laphroaig 10 | Frangelico | walnut | Cocchi
+                            Americano | black pepper</p>
+
+                        <h3>Gunnlöð's Delight</h3>
+                        <p>Rosaluna Mezcal | dragonfruit | rooibos | grapefruit | Lillet Rosé | rose pollen</p>
+
+                        <h3>Bölverk's Whetstone</h3>
+                        <p>W&G Woody Creek 70/30 | Bowmore 12 | pecan | Angostura</p>
+
+                        <h3>Útgarða-Loki's Horn</h3>
+                        <p>Left Hand Nitro Milk Stout | Blackstrap Rum | Averna | Licor 43 | black walnut | Chinese
+                            5-spice coconut foam</p>
+
+                        <h3>Víðarr's Revenge</h3>
+                        <p>Tullamore D.E.W. PX Sherry | black cardamom | Averna | Angostura</p>
+                    </div>
+                </div>
+
+                <!-- wine-->
+                <div class="menus" data-menu="wine">
+                    <div class="bt">
+                        <h3>Rosé</h3>
+                        <p>DOMAINE GUIBERTEAU SAMMUR <br>
+                            2022 Loire Valley, France 22 | 86</p>
+                        <p>AMEZTOI RUBENTIS<br>
+                            2021 Basque Country, Spain 20 | 78</p>
+                        <p>SELENE <br>
+                            2023 Rosé, Greece 13 | 48</p><br>
+
+                        <h3>Sparkling</h3>
+                        <p>TAITTINGER BRUT CHAMPAGNE<br>
+                            Champagne, France — 28 | 54 </p>
+                        <p>FIORE <br>
+                            2023 Moscato, Italy 13 | 48</p>
+                        <p>POEMA BRUT CAVA<br>
+                            Moscato, Spain 14 | 54</p>
+                        <p>PIZZOLATO ROSÉ<br>
+                            Sparkling Rosé, Italy 14 | 54</p><br>
+
+                        <h3>White</h3>
+                        <p>BODEGAS OSTATU<br>
+                            2023 Rioja Blanc, Spain — 12 | 46</p>
+                        <p>HOLLY'S WAY <br>
+                            2023 Chardonnay, California 15 | 56</p>
+                        <p>PERFEKT <br>
+                            2022 Riesling, Germany 14 | 52</p><br>
+
+                        <h3>Orange</h3>
+                        <p>ŠTEKAR REBULA<br>
+                            2024 Goriška Brda, Slovenia 18 | 70</p>
+                        <p>BONNY DOON <br>
+                            2023 Santa Margarita, California 13 | 48</p><br>
+
+                        <h3>Red</h3>
+                        <p>ESPIRITU <br>
+                            2023 Malbec, Argentina 13 | 48</p>
+                        <p>BEZEL<br>
+                            2023 Pinot Noir, California 22 | 86</p>
+                        <p>FOLK MACHINE <br>
+                            2023 Pinot Noir, California 15 | 56</p>
+                        <p>THE DUDE<br>
+                            2023 Red Blend, California 21 | 82</p>
+                        <p>CENTENARIO <br>
+                            2023 Cabernet Sauvignon, Chile 14 | 52</p>
+                        <p>LOST MOUNTAIN <br>
+                            2022 Merlot-Cabernet, Washington 13 | 48</p><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- beer -->
+            <div class="menus" data-menu="beer">
+                <div class="bt">
+                    <h3>Cider</h3>
+                    <p>2 TOWNS: BRIGHTCIDER <br>
+                        US | ABV: 6.0% | 7</p>
+                    <p>SCHILLING: IMPERIAL APPLE PIE <br>
+                        US | ABV: 8.4% | 7</p>
+
+                    <h3>Mead</h3>
+                    <p>CHAUCÉR'S <br>
+                        Traditional | ABV: 10.5% | 8</p>
+                    <p>OLIVER CAMELOT <br>
+                        Traditional | ABV: 10% | 8</p>
+                    <p>GOLDEN COAST ORANGE BLOSSOM <br>
+                        Traditional | ABV: 10.5% | 10</p>
+                    <p>VALHALLA <br>
+                        Bochet | ABV: 12-14% | 12</p>
+                    <p>IRONSTONE MEADERY <br>
+                        Session | ABV: 8% | 7</p>
+                    <p>SUTTUNG'S PRIZE: MEAD OF POETRY</p>
+                    Hopped, Sparkling | ABV: 14% | $12
+
+
+                    <h3>IPA</h3>
+                    <p>DRY DOCK: HOPRICOT <br>
+                        Fruity | ABV: 6% | 7</p>
+                    <p>GREAT DIVIDE: HAZY IPA <br>
+                        Hazy | ABV: 6.2% | 7</p>
+                    <p>OUTER RANGE: IN THE STEEP <br>
+                        New England IPA | Pine, grapefruit, hop | ABV: 6.7% | 7</p>
+                    <p>OUTER RANGE: SUPER 8 <br>
+                        Imperial  IPA | ABV: 8% | 9</p>
+                    <p>STATION 26: JUICY BANGER <br>
+                        Hazy | ABV: 7.4% | 8</p>
+                    <p>WELDWERKS: JUICY BITS <br>
+                        New England IPA | Citrus, tropical fruit, hop | ABV: 6.7% || 7</p>
+
+                    <h3>Sour Ales</h3>
+                    <p>VANDERGHINSTE FLANDERS SOUR ALE <br>
+                        Flemish Sour | ABV: 5.5% | Belgium | 9</p>
+                    <p>CUVÉE DES JACOBINS ROUGE <br>
+                        Flemish Sour | ABV: 5.5% | Belgium | 8</p>
+                    <p>3 FONTEINEN OUDE GEUZE <br>
+                        Geuze | ABV: 6.4% | Belgium | 7</p>
+                    <p>BLÁGOSI <br>
+                        Sour Ale | ABV: 5.6% | Iceland | 8</p>
+                    <p>CROOKED STAVE: SOUR ROSÉ <br>
+                        Sour Ale | ABV: 4.5% | US | 7</p>
+                    <p>DENVER BEER COMPANY: PRINCESS YUM YUM <br>
+                        Raspberry Kolsch | ABV: 4.8% | US | 6</p>
+                    <p>DEWEY: WILDBERRY PIE <br>
+                        Fruited Sour | ABV: 7% | US | 7</p>
+                    <p>ODELL: SIPPIN' PRETTY <br>
+                        Fruited Sour | ABV: 4.5% | US | 6</p>
+
+
+                    <h3>Trappist </h3>
+                    <p>CHIMAY TRAPPIST PREMIERE <br>
+                        Abbey Dubbel | ABV: 7.0% | Belgium | 10</p>
+                    <p>WESTMALLE TRIPEL<br>
+                        Tripel | ABV: 9.5% | Belgium | 12</p>
+                    <p>LA TRAPPE QUADRUPEL<br>
+                        Quadrupel | ABV: 10% | Netherlands | 11</p>
+
+
+
+                    <h3>Light</h3>
+                    <p>PROST: PILSNER <br>
+                        Pilsner | ABV: 4.9% | US | 7</p>
+                    <p>WIBBY: THERE'S A HOP IN MY BEER <br>
+                        Pilsner | ABV: 4.1% | 7</p>
+                    <p>STONE: BUENAVEZA SALT & LIME LAGER <br>
+                        Lager | ABV: 4.7% | Mexico | 7</p>
+                    <p>WIBBY: LIGHTSHINE HELLES <br>
+                        Lager | ABV: 5.5% | 7</p>
+                    <p>OUTER RANGE: CAMP LAGER <br>
+                        Lager | ABV: 4.3% | US | 7</p>
+                    <p>BOOTSTRAP: CHILLAX <br>
+                        Pineapple Golden Ale | ABV: 4.5% | US | 7</p>
+                    <p>DRY DOCK: AMBER <br>
+                        Amber Ale | ABV: 5.8% | US | 7</p>
+                    <p>TELLURIDE: TANGERINE BLONDE <br>
+                        Blonde Ale | ABV: 5.2% | US | 6</p>
+                    <p>DE GLAZEN TOREN JAN DE LICHTE <br>
+                        White/Witbier | ABV: 7.5% | Belgium | 8</p>
+                    <p>AVERY: WHITE RASCAL <br>
+                         White Ale | ABV: 5.6% | US | 7</p>
+                    <p>RATIO: KING OF CARROT FLOWERS <br>
+                        Saison | ABV: 5.9% | US | 6</p>
+                    <p>BOULEVARD: TANK 7 <br>
+                        Saison | ABV: 8.5% | US | 6</p>
+                    
+                        <h3>Dark</h3>
+                    <p>GREAT DIVIDE: BARREL AGED YETI <br>
+                        Imperial Stout | ABV: 12.5% | US | 7</p>
+                    <p>GREAT DIVIDE: VELVET YETI <br>
+                        Stout | ABV: 5% | US | 7</p>
+                    <p>HORSE & DRAGON: SAD PANDA COFFEE STOUT <br>
+                        Stout || ABV: 6.8% | US | 7</p>
+                    <p>LEFT HAND: NITRO MILK STOUT <br>
+                        Stout | ABV: 6% | US | 7</p>
+                    <p>CEREBRAL BREWING NORDIC NOIR <br>
+                        Baltic Porter | ABV: 8.0% | US | 7</p>
+                    <p>WELDWERKS CHAI BALTIC PORTER <br>
+                        Baltic Porter | ABV: 8.6% | US | 7</p>
+                    
+                        <h3>Hard Seltzer</h3>
+                    <p>UPSLOPE: SNOWMELT PEACH LEMONADE SELTZER <br>
+                        Hard Seltzer | ABV: 5% | US | 7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

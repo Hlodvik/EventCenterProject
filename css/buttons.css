@@ -1,0 +1,159 @@
+button, .btn {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Julius Sans One";
+    background: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    width: 20vw;
+    align-self: center;
+    border-radius: 25px;
+    margin-bottom: 5vh;
+}
+
+.reservation-btn {
+    background: #9e891f; /* Gold accent for reservation button */
+}
+.reservation-btn:hover {
+    background: #857716;
+}
+
+button:hover, .btn:hover {
+    background: #5a6268;
+    color: white;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    background: #6c757d;
+    color: white;
+}
+
+  
+.view-toggle button:active {
+    transform: scale(0.98);  
+}
+
+
+.view-toggle button:hover {
+    background: #5a6268;
+}
+
+/* ticket button */
+.ticket-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #5a6268;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ticket-link:hover {
+    background-color: #9e891f;
+    
+}
+
+.calendar-controls button {
+    background: #495057;
+    color: white;
+}
+
+.calendar-controls button:hover {
+    background: #343a40;
+}
+
+.calendar-controls button:active {
+    transform: scale(0.98);
+}
+ 
+.arrow {
+    position: absolute;
+    bottom: 4vh;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    z-index: 100; 
+    background-color: #373737;
+    border-radius: 25px;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+ 
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+ 
+ 
+.menu-arrow {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.menu-arrow:hover {opacity: 0.7;}
+
+
+.arrow {
+    font-size: 28px;
+    flex-grow: 1;
+    cursor: pointer;
+    background-color: transparent;
+    user-select: none;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    position: static;  
+    color:black;
+}
+.arrow:hover {
+    transition: opacity 0.3s ease;
+    background-color:#ffffff00;
+    color:#313131;
+}
+.rb{
+    color: black;
+    background-color: #ffffff00;
+    text-decoration: underline;
+    margin: 5px;
+    width:fit-content
+}
+.rb:hover{
+    background-color: #ffffff00;
+    color:#9e891f;
+}
+/* found this somewhere online, looked good so im using it*/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

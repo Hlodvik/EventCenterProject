@@ -1,0 +1,72 @@
+.event {
+    background: #ff4081;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 3px 0;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.event-item {
+    position: relative;  
+    width: 95%; 
+    min-height: 60vh; /* Ensure height is always maintained */
+    display: flex;
+    flex-direction: row; /* Content will align left (details) and right (image) */
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 40px;  
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Ensure backdrop visibility */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures nothing breaks layout */
+}
+
+.event-details {
+    width: 45%; /* Allocates space for text */
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    border-radius: 10px;
+    z-index: 5;
+}
+.event-details p {
+    margin-bottom: 3vh; /* Space between each detail */
+}
+
+
+.event-date {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.event-image {
+    position: absolute;
+    top: 50%;
+    right: 5%;  
+    transform: translateY(-50%);
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index:10;
+}
+
+/* private event styling */
+.private-event {
+    background: gray;
+    color: white;
+}
